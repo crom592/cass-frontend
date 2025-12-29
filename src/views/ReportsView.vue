@@ -445,7 +445,7 @@ function downloadBlob(blob: Blob, filename: string) {
 }
 
 function viewSnapshot(row: any) {
-  router.push(`/reports/snapshot/${row.date}`)
+  router.push(`/reports/snapshot/${row.id}`)
 }
 
 function getPriorityColor(priority: string) {

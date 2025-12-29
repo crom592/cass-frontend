@@ -149,11 +149,31 @@ async function fetchSnapshot() {
   error.value = false
 
   try {
-    const date = route.params.date as string
-    snapshotDate.value = date
+    const id = route.params.id as string
     
-    const data = await apiClient.getReportSnapshot(date)
-    snapshot.value = data
+    const data = await apiClient.getReportSnapshot(id)
+    
+    // Parse snapshot data
+    if (data.parsed_metrics) {
+      snapshotDate.value = data.period_start
+      snapshot.value = {
+        total_tickets: data.parsed_metrics.total_created,
+        resolved_count: data.parsed_metrics.total_resolved,
+        sla_breached: data.parsed_metrics.sla_breached_count,
+        avg_resolution_time: data.parsed_metrics.avg_resolution_time_hours * 60, // Convert to minutes
+        by_status: Object.entries(data.parsed_metrics.by_status || {}).map(([status, count]) => ({ status, count })),
+        by_category: Object.entries(data.parsed_metrics.by_category || {}).map(([category, count]) => ({ category, count })),
+        by_priority: Object.entries(data.parsed_metrics.by_priority || {}).map(([priority, count]) => ({ priority, count })),
+        by_engineer: data.parsed_metrics.top_sites?.map((site: any) => ({ engineer: site.site_name, count: site.ticket_count })) || [],
+        first_response_time: 0,
+        resolution_rate: data.parsed_metrics.total_created > 0 ? (data.parsed_metrics.total_resolved / data.parsed_metrics.total_created * 100).toFixed(1) : 0,
+        sla_compliance: (data.parsed_metrics.sla_compliance_rate * 100).toFixed(1),
+        csat_score: 0
+      }
+    } else {
+      snapshot.value = data
+      snapshotDate.value = data.period_start
+    }
   } catch (err: any) {
     console.error('Failed to fetch snapshot:', err)
     error.value = true
