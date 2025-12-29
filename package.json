@@ -1,7 +1,7 @@
 {
-  "name": "cass-frontend",
+  "name": "tardis-cass-frontend",
   "version": "1.0.0",
-  "description": "CASS - Charger After-Service System Frontend",
+  "description": "TARDIS CASS - Charger After-Service System Frontend",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -25,8 +25,14 @@
     "@typescript-eslint/parser": "^6.15.0",
     "@vitejs/plugin-vue": "^5.0.0",
     "@vue/tsconfig": "^0.5.1",
+    "autoprefixer": "^10.4.23",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "eslint": "^8.56.0",
     "eslint-plugin-vue": "^9.19.2",
+    "postcss": "^8.5.6",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss": "^4.1.18",
     "typescript": "^5.3.3",
     "vite": "^5.0.8",
     "vue-tsc": "^1.8.25"

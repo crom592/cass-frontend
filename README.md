@@ -1,6 +1,6 @@
-# CASS Frontend - Charger After-Service System
+# TARDIS CASS Frontend - Charger After-Service System
 
-Vue.js 3 frontend for the Charger After-Service System (CASS).
+Vue.js 3 frontend for the TARDIS CASS (Charger After-Service System).
 
 ## Tech Stack
 

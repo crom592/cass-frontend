@@ -20,7 +20,6 @@
             </button>
           </div>
           <button class="btn-export" @click="handleExport">
-            <span class="icon">📥</span>
             {{ t('reports.exportData') }}
           </button>
         </div>
@@ -149,10 +148,10 @@ const periods = [
 ]
 
 const stats = ref([
-  { key: 'totalTickets', value: '156', trend: 12, icon: '🎫', color: '#EB5D19' },
-  { key: 'resolvedCount', value: '124', trend: 8, icon: '✅', color: '#27ae60' },
-  { key: 'slaBreachRate', value: '4.5%', trend: -2, icon: '⚠️', color: '#e74c3c' },
-  { key: 'avgResolutionTime', value: '2.4h', trend: -15, icon: '⏱️', color: '#3498db' }
+  { key: 'totalTickets', value: '156', trend: 12, icon: 'T', color: '#EB5D19' },
+  { key: 'resolvedCount', value: '124', trend: 8, icon: 'R', color: '#27ae60' },
+  { key: 'slaBreachRate', value: '4.5%', trend: -2, icon: 'S', color: '#e74c3c' },
+  { key: 'avgResolutionTime', value: '2.4h', trend: -15, icon: 'A', color: '#3498db' }
 ])
 
 const trendData = ref([45, 60, 55, 75, 85, 70, 95, 80, 65, 50, 40, 55])
