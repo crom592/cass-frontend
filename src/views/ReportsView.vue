@@ -329,7 +329,7 @@ async function fetchReportData() {
       apiClient.getReportStats(params).catch(() => null),
       apiClient.getReportTrends(params).catch(() => null),
       apiClient.getReportDistribution(params).catch(() => null),
-      apiClient.getReportSnapshots(params).catch(() => null)
+      apiClient.getRecentSnapshots({ limit: 10 }).catch(() => null)
     ])
 
     // Update stats

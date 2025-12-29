@@ -147,6 +147,11 @@ class ApiClient {
     return response.data
   }
 
+  async getRecentSnapshots(params?: any) {
+    const response = await this.client.get('/reports/snapshots/recent', { params })
+    return response.data
+  }
+
   async getReportSnapshot(id: string) {
     const response = await this.client.get(`/reports/snapshots/${id}`)
     return response.data
