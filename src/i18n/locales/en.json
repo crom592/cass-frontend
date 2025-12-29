@@ -28,7 +28,8 @@
     "none": "None",
     "select": "Select",
     "noData": "No data available",
-    "unknown": "Unknown"
+    "unknown": "Unknown",
+    "view": "View"
   },
   "nav": {
     "dashboard": "Dashboard",

@@ -1,7 +1,7 @@
 {
   "common": {
     "appName": "TARDIS CASS",
-    "appFullName": "충전기 사후 서비스 시스템",
+    "appFullName": "충전기 유지 보수 시스템",
     "loading": "로딩 중...",
     "save": "저장",
     "cancel": "취소",
@@ -28,7 +28,8 @@
     "none": "없음",
     "select": "선택",
     "noData": "데이터가 없습니다",
-    "unknown": "알 수 없음"
+    "unknown": "알 수 없음",
+    "view": "보기"
   },
   "nav": {
     "dashboard": "대시보드",
