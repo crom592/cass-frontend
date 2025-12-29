@@ -1,0 +1,325 @@
+{
+  "common": {
+    "appName": "CASS",
+    "appFullName": "Charger After-Service System",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "reset": "Reset",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "na": "N/A",
+    "optional": "Optional",
+    "required": "Required",
+    "all": "All",
+    "none": "None",
+    "select": "Select",
+    "noData": "No data available",
+    "unknown": "Unknown"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "tickets": "Tickets",
+    "reports": "Reports",
+    "settings": "Settings",
+    "myWork": "My Work",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "loggingIn": "Logging in...",
+    "loginSuccess": "Login successful",
+    "loginFailed": "Login failed. Please check your credentials.",
+    "enterEmail": "Enter your email",
+    "enterPassword": "Enter your password"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "totalTickets": "Total Tickets",
+    "critical": "Critical",
+    "slaBreached": "SLA Breached",
+    "resolvedToday": "Resolved Today",
+    "newTicket": "New Ticket",
+    "viewAllTickets": "View All Tickets"
+  },
+  "ticket": {
+    "title": "Title",
+    "description": "Description",
+    "status": "Status",
+    "priority": "Priority",
+    "category": "Category",
+    "channel": "Channel",
+    "ticketNumber": "Ticket Number",
+    "tickets": "Tickets",
+    "newTicket": "New Ticket",
+    "createTicket": "Create Ticket",
+    "createNewTicket": "Create New Ticket",
+    "editTicket": "Edit Ticket",
+    "ticketDetail": "Ticket Detail",
+    "ticketInformation": "Ticket Information",
+    "ticketNotFound": "Ticket Not Found",
+    "ticketNotFoundDesc": "The ticket you are looking for does not exist or has been deleted.",
+    "backToTickets": "Back to Tickets",
+    "loadingTicket": "Loading ticket...",
+    "loadingTickets": "Loading tickets...",
+    "noTicketsFound": "No tickets found",
+    "noTicketsFoundDesc": "Try adjusting your filters or create a new ticket.",
+    "creatingTicket": "Creating...",
+    "searchPlaceholder": "Ticket number or title...",
+    "fillDetailsBelow": "Fill in the details below to create a new support ticket",
+    "sla": "SLA",
+    "slaBreached": "SLA BREACHED",
+    "slaOnTrack": "On Track",
+    "slaBreach": "Breached",
+    "createdAt": "Created At",
+    "openedAt": "Opened At",
+    "resolvedAt": "Resolved At",
+    "closedAt": "Closed At",
+    "resolutionSummary": "Resolution Summary",
+    "timeline": "Timeline",
+    "live": "Live",
+    "liveUpdatesEnabled": "Live updates enabled",
+    "connecting": "Connecting...",
+    "showing": "Showing {start} to {end} of {total} tickets"
+  },
+  "ticketAction": {
+    "changeStatus": "Change Status",
+    "selectStatus": "Select status...",
+    "assign": "Assign",
+    "assignTicket": "Assign Ticket",
+    "assigning": "Assigning...",
+    "addWorklog": "Add Worklog",
+    "creatingWorklog": "Creating...",
+    "saveChanges": "Save Changes",
+    "saving": "Saving...",
+    "changing": "Changing...",
+    "statusChangeNote": "Note (Optional)",
+    "statusChangeNotePlaceholder": "Add a note about this status change..."
+  },
+  "filter": {
+    "status": "Status",
+    "priority": "Priority",
+    "category": "Category",
+    "search": "Search",
+    "allStatuses": "All Statuses",
+    "allPriorities": "All Priorities",
+    "allCategories": "All Categories",
+    "clearFilters": "Clear Filters"
+  },
+  "reporter": {
+    "title": "Reporter Information",
+    "name": "Reporter Name",
+    "email": "Reporter Email",
+    "phone": "Reporter Phone",
+    "enterName": "Enter reporter name",
+    "enterEmail": "Enter reporter email",
+    "enterPhone": "Enter reporter phone"
+  },
+  "asset": {
+    "title": "Asset Information",
+    "site": "Site",
+    "charger": "Charger",
+    "siteId": "Site ID",
+    "chargerId": "Charger ID",
+    "chargerStatus": "Charger Status",
+    "selectSite": "Select a site",
+    "selectCharger": "Select a charger (optional)",
+    "selectSiteFirst": "Select a site first",
+    "loadingSites": "Loading sites...",
+    "loadingChargers": "Loading chargers..."
+  },
+  "additional": {
+    "title": "Additional Details",
+    "createdBy": "Created By"
+  },
+  "assign": {
+    "assigneeId": "Assignee ID",
+    "enterAssigneeId": "Enter assignee ID",
+    "vendorName": "Vendor Name (Optional)",
+    "enterVendorName": "Enter vendor name",
+    "dueDate": "Due Date"
+  },
+  "worklog": {
+    "title": "Worklog",
+    "description": "Description",
+    "descriptionPlaceholder": "Describe the work performed...",
+    "workType": "Work Type",
+    "timeSpent": "Time Spent (minutes)",
+    "enterTimeSpent": "Enter time in minutes",
+    "internalNote": "Internal Note (not visible to customer)"
+  },
+  "timestamps": {
+    "title": "Timestamps"
+  },
+  "status": {
+    "new": "New",
+    "assigned": "Assigned",
+    "in_progress": "In Progress",
+    "pending_customer": "Pending Customer",
+    "pending_vendor": "Pending Vendor",
+    "resolved": "Resolved",
+    "closed": "Closed",
+    "cancelled": "Cancelled"
+  },
+  "priority": {
+    "critical": "Critical",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+  "category": {
+    "hardware": "Hardware",
+    "software": "Software",
+    "network": "Network",
+    "power": "Power",
+    "connector": "Connector",
+    "firmware": "Firmware",
+    "other": "Other"
+  },
+  "channel": {
+    "phone": "Phone",
+    "email": "Email",
+    "web": "Web",
+    "mobile": "Mobile",
+    "auto": "Auto"
+  },
+  "workType": {
+    "diagnosis": "Diagnosis",
+    "repair": "Repair",
+    "testing": "Testing",
+    "communication": "Communication",
+    "travel": "Travel",
+    "waiting": "Waiting",
+    "other": "Other"
+  },
+  "chargerStatus": {
+    "available": "Available",
+    "charging": "Charging",
+    "unavailable": "Unavailable",
+    "faulted": "Faulted",
+    "reserved": "Reserved",
+    "unknown": "Unknown"
+  },
+  "message": {
+    "success": {
+      "ticketCreated": "Ticket created successfully!",
+      "ticketUpdated": "Ticket updated successfully",
+      "ticketAssigned": "Ticket assigned successfully",
+      "statusChanged": "Status changed to {status}",
+      "worklogAdded": "Worklog added successfully"
+    },
+    "error": {
+      "ticketCreateFailed": "Failed to create ticket. Please try again.",
+      "ticketUpdateFailed": "Failed to update ticket",
+      "ticketLoadFailed": "Failed to load ticket. Please try again.",
+      "statusChangeFailed": "Failed to change status",
+      "assignFailed": "Failed to assign ticket",
+      "worklogAddFailed": "Failed to add worklog",
+      "validationError": "Please fix the validation errors before submitting"
+    },
+    "info": {
+      "ticketCreatedByOther": "New ticket created: {ticketNumber}",
+      "ticketUpdatedByOther": "Ticket updated by another user",
+      "statusChangedByOther": "Status changed: {oldStatus} -> {newStatus}",
+      "worklogAddedByOther": "New worklog added by another user"
+    }
+  },
+  "validation": {
+    "titleRequired": "Title is required",
+    "siteRequired": "Site is required",
+    "invalidEmail": "Please enter a valid email address"
+  },
+  "language": {
+    "korean": "Korean",
+    "english": "English",
+    "switchLanguage": "Switch Language"
+  },
+  "myWork": {
+    "title": "My Work",
+    "subtitle": "AS Engineer work portal - Coming Soon",
+    "icon": "wrench",
+    "underDevelopment": "Under Development",
+    "description": "This feature is currently being developed to provide a specialized view for field engineers."
+  },
+  "reports": {
+    "title": "Reports",
+    "subtitle": "Performance metrics and data exports - Coming Soon",
+    "icon": "chart",
+    "underDevelopment": "Advanced reporting tools with date range selection and CSV exports are coming soon.",
+    "description": "Advanced reporting tools with date range selection and CSV exports are coming soon.",
+    "exportData": "Export Data",
+    "periods": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    },
+    "stats": {
+      "totalTickets": "Total Tickets",
+      "resolvedCount": "Resolved Tickets",
+      "slaBreachRate": "SLA Breach Rate",
+      "avgResolutionTime": "Avg. Resolution"
+    },
+    "charts": {
+      "ticketTrends": "Ticket Volume Trends",
+      "byCategory": "Tickets by Category",
+      "byPriority": "Tickets by Priority"
+    },
+    "recentSnapshots": "Recent Report Snapshots",
+    "table": {
+      "date": "Date",
+      "totalTickets": "Total",
+      "resolved": "Resolved",
+      "slaBreached": "SLA Breached",
+      "avgResolution": "Avg. Resolution",
+      "actions": "Actions"
+    }
+  },
+  "timeline": {
+    "title": "Activity Timeline",
+    "autoRefreshOn": "Auto-refresh ON",
+    "autoRefreshOff": "Auto-refresh OFF",
+    "refresh": "Refresh",
+    "loading": "Loading activity history...",
+    "noHistory": "No activity history yet",
+    "noHistorySubtitle": "Status changes and worklogs will appear here",
+    "statusChanged": "Status changed:",
+    "internal": "Internal",
+    "retry": "Retry"
+  },
+  "csms": {
+    "title": "CSMS Status",
+    "noChargerSelected": "No charger selected",
+    "selectChargerToView": "Select a charger to view its status and events",
+    "loadingStatus": "Loading charger status...",
+    "unavailable": "CSMS Unavailable",
+    "tryAgain": "Try Again",
+    "refreshStatus": "Refresh status",
+    "chargerInformation": "Charger Information",
+    "name": "Name",
+    "serialNumber": "Serial Number",
+    "vendor": "Vendor",
+    "model": "Model",
+    "firmware": "Firmware",
+    "operationalStatus": "Operational Status",
+    "lastCommunication": "Last Communication",
+    "recentEvents": "Recent Events",
+    "noRecentEvents": "No recent events",
+    "autoRefresh": "Auto-refresh: {seconds}s"
+  }
+}
