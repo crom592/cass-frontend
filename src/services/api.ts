@@ -142,8 +142,41 @@ class ApiClient {
     return response.data
   }
 
+  async getReportSnapshots(params?: any) {
+    const response = await this.client.get('/reports/snapshots', { params })
+    return response.data
+  }
+
+  async getReportSnapshot(id: string) {
+    const response = await this.client.get(`/reports/snapshots/${id}`)
+    return response.data
+  }
+
+  async getReportStats(params: any) {
+    const response = await this.client.get('/reports/stats', { params })
+    return response.data
+  }
+
+  async getReportTrends(params: any) {
+    const response = await this.client.get('/reports/trends', { params })
+    return response.data
+  }
+
+  async getReportDistribution(params: any) {
+    const response = await this.client.get('/reports/distribution', { params })
+    return response.data
+  }
+
   async exportTickets(params: any) {
     const response = await this.client.get('/reports/export', {
+      params,
+      responseType: 'blob',
+    })
+    return response.data
+  }
+
+  async exportReportData(params: any, format: 'csv' | 'xlsx' = 'csv') {
+    const response = await this.client.get(`/reports/export/${format}`, {
       params,
       responseType: 'blob',
     })

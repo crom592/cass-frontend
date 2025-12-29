@@ -29,7 +29,9 @@
     "select": "Select",
     "noData": "No data available",
     "unknown": "Unknown",
-    "view": "View"
+    "view": "View",
+    "apply": "Apply",
+    "refresh": "Refresh"
   },
   "nav": {
     "dashboard": "Dashboard",
@@ -289,7 +291,27 @@
       "slaBreached": "SLA Breached",
       "avgResolution": "Avg. Resolution",
       "actions": "Actions"
-    }
+    },
+    "dateRange": {
+      "from": "From",
+      "to": "To",
+      "custom": "Custom Range"
+    },
+    "export": {
+      "csv": "Export as CSV",
+      "xlsx": "Export as Excel",
+      "downloading": "Downloading...",
+      "success": "Report exported successfully",
+      "error": "Failed to export report"
+    },
+    "autoRefresh": {
+      "enabled": "Auto-refresh enabled",
+      "disabled": "Auto-refresh disabled",
+      "interval": "Refresh every {seconds}s"
+    },
+    "loading": "Loading report data...",
+    "noData": "No data available for selected period",
+    "error": "Failed to load report data"
   },
   "timeline": {
     "title": "Activity Timeline",

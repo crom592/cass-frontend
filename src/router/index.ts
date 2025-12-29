@@ -46,6 +46,12 @@ const router = createRouter({
       component: () => import('@/views/ReportsView.vue'),
       meta: { requiresAuth: true, roles: ['admin', 'tenant_admin', 'as_manager'] },
     },
+    {
+      path: '/reports/snapshot/:date',
+      name: 'report-snapshot',
+      component: () => import('@/views/ReportSnapshotView.vue'),
+      meta: { requiresAuth: true, roles: ['admin', 'tenant_admin', 'as_manager'] },
+    },
   ],
 })
 
