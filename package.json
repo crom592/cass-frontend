@@ -2,6 +2,8 @@
   "name": "tardis-cass-frontend",
   "version": "1.0.0",
   "description": "TARDIS CASS - Charger After-Service System Frontend",
+  "private": true,
+  "license": "UNLICENSED",
   "type": "module",
   "scripts": {
     "dev": "vite",
